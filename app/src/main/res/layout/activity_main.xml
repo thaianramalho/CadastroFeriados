@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Feriado"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:hint="Data (YYYY-MM-DD)"
+        android:minHeight="48dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado (se estadual)"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextMunicipio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Município (se municipal)"
+        android:minHeight="48dp" />
+
+
+    <Button
+        android:id="@+id/buttonCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar" />
+
+
+    <Button
+        android:id="@+id/buttonExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Excluir" />
+
+    <ListView
+        android:id="@+id/listViewFeriados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

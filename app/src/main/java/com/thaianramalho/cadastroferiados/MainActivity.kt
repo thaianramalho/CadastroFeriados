@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Não faz nada
+
             }
         }
 
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
             }, year, month, day)
 
         datePickerDialog.datePicker.minDate =
-            System.currentTimeMillis() // Impede a seleção de datas passadas
+            System.currentTimeMillis()
         datePickerDialog.show()
     }
 
@@ -193,7 +193,6 @@ class MainActivity : AppCompatActivity() {
             estado.takeIf { tipo == TipoFeriado.ESTADUAL },
             municipio.takeIf { tipo == TipoFeriado.MUNICIPAL })
 
-        // Atualiza a ListView
         adapter.clear()
         feriados.forEach {
             if(it.tipo == TipoFeriado.ESTADUAL){
